@@ -28,7 +28,7 @@ p {
     margin-left: 120px;
 }
 
-input[type="text"], select, textarea {
+input[type="text"], input[type="date"], select, textarea {
     background-color: #ffffff;
     color: #274760;
     padding: 10px;
@@ -37,6 +37,7 @@ input[type="text"], select, textarea {
     width: 50%;
     margin-top: 6px;
 }
+
 #confirmationModal {
     display: none;
     position: fixed;
@@ -66,12 +67,12 @@ button {
 }
 
 button:hover {
-    transform: scale(1.05); /* Zoom tombol saat di-hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Shadow yang lebih besar */
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .overlay {
-    display: none; /* Awalnya tersembunyi */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
