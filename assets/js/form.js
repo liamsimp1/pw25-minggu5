@@ -39,6 +39,22 @@ document.getElementById("form").addEventListener("submit", function(event) {
         const selectedDate = new Date(this.value);
         console.log("Tanggal yang dipilih:", selectedDate);
     });
-    alert("Formulir berhasil dikirim!");
-    document.getElementById("form").submit();
+
+    function showNotification(message) {
+        const notification = document.createElement("div");
+        notification.innerText = message;
+        notification.style.backgroundColor = "#4caf50";
+        notification.style.color = "white";
+        notification.style.padding = "10px";
+        notification.style.margin = "10px 0";
+        document.body.appendChild(notification);
+        setTimeout(() => {
+            notification.style.opacity = 0;
+            setTimeout(() => notification.remove(), 5000);
+        }, 3000);
+    }
+
+    showNotification("Janji temu berhasil dibuat!");
+    setTimeout(() => document.getElementById("form").submit(), 5000);
+
 });

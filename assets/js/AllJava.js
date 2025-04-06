@@ -1,4 +1,16 @@
 function showModal() {
+    const name = document.getElementById("name").value;
+    const appointmentDate = document.getElementById("appointmentDate").value;
+    const email = document.getElementById("email").value;
+    const spec = document.getElementById("spec").value;
+    const cabang = document.getElementById("cabang").value;
+
+
+    if (!name || !appointmentDate || !email || !cabang || !spec) {
+        alert("Harap lengkapi semua data sebelum mengirim!");
+        return;
+    }
+
     document.getElementById("confirmationModal").style.display = "block";
     document.getElementById("overlay").style.display = "block";
 }
