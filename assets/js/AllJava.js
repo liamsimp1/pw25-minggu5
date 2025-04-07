@@ -1,6 +1,6 @@
 function showModal() {
     const name = document.getElementById("name").value;
-    const appointmentDate = document.getElementById("appointmentDate").value;
+    const appointmentDate = document.getElementById("tanggalJanji").value;
     const email = document.getElementById("email").value;
     const spec = document.getElementById("spec").value;
     const cabang = document.getElementById("cabang").value;

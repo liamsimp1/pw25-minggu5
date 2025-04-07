@@ -6,9 +6,11 @@ body{
 h1{
     margin-left: 120px;
 }
+
 h2{
     text-align: center;
 }
+
 p{
     text-align: justify;
     font-family: "Times New Roman", serif;
@@ -27,15 +29,18 @@ table {
     padding: 10px;
     border-radius: 20px;
 }
+
 th, td {
     border-right: 1.5px solid #718193;
     border-bottom: 1.5px solid #718193;
     text-align: center;
     padding: 8px;
 }
+
 td:last-child, th:last-child {
     border-right: none;
 }
+
 tr:last-child td {
     border-bottom: none;
 }

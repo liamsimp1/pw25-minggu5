@@ -11,7 +11,7 @@ body{
     }
     p {
         text-align: justify;
-        family: times new roman;
+        font-family: times new roman, sans-serif;
     }
 }
 
@@ -38,7 +38,7 @@ hr{
     max-width: 450px;
     overflow: hidden;
     margin: 20px auto;
-    dsiplay: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
 }
@@ -59,7 +59,7 @@ hr{
 
 #prev::before {
     content: '\f104';
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Free', times new roman, sans-serif;
     font-weight: 900;
     font-size: 20px;
     margin-left: 10px;
@@ -68,7 +68,7 @@ hr{
 
 #next::before {
     content: '\f105';
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Free', times new roman, sans-serif;
     font-weight: 900;
     font-size: 20px;
     margin-right: 10px;
@@ -116,7 +116,7 @@ hr{
 }
 
 .container.text{
-    font-family: times new roman;
+    font-family: times new roman, sans-serif;
     font-size: 18px;
     color: #274760;
     line-height: 1.5;

@@ -18,4 +18,5 @@ const countdownInterval = setInterval(() => {
         clearInterval(countdownInterval);
         document.getElementById("countdown").innerHTML = "Waktu Habis!";
     }
+
 }, 1000);
